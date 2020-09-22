@@ -1,0 +1,18 @@
+<%- include('../templates/header'); %>
+
+<div class="text-center container-sm w-25" >
+    <form class="form-signin" action="auth" method="POST">
+        <img class="mb-4" src="./assets/logo ppt.png" alt="logo">
+        <h2>Please sign in</h2>
+
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="username" name="inputUsername" id="inputUsername" class="form-control" value="operator" required autofocus>
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="" required>
+        
+        <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign in">
+    </form>
+</div>
+
+<%- include('../templates/footer'); %>
